@@ -1,0 +1,73 @@
+/* Original styles - don't edit these! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: rgba(0, 0, 0, 0.671);
+}
+.bg1 {
+  background: url(bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg2 {
+  background: url(bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Add your styles below here*/
+.container{
+
+  display: flex;
+  padding-left: 22rem;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 300px 300px 300px 300px;
+  gap: 0.5rem;
+  grid-auto-rows:300px;
+}
+
+/* .bg1, .bg2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #eee; 
+}  */
+
+/* .name{
+  display: flex;
+justify-content: center;
+  background-color: rgba(0, 0, 0, 0.664);
+  font-size: 1.2rem;
+}
+
+.nummer{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.container > div > * {
+  padding: .5em;
+  color: #eee;
+  background: rgba(0, 0, 0, 0.555);
+}
+
+.container > div:hover {
+  box-shadow: rgba(111, 0, 255, 0.25) 0px 54px 55px, rgba(143, 6, 170, 0.12) 0px -12px 30px, rgba(64, 6, 223, 0.363) 0px 4px 6px, rgba(26, 13, 146, 0.308) 0px 12px 13px, rgba(12, 14, 139, 0.397) 0px -3px 5px;
+}
